@@ -481,3 +481,137 @@ form {
   .scroller:after{
     background: #fff;
   }
+
+
+
+
+
+
+
+
+
+
+
+.box-minmax{
+  margin-top: 10px;
+  width: 308px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  color: #808080;
+  span:first-child{
+    margin-left: 10px;
+  }
+}
+.range-slider {
+    margin-top: 0vh;
+    
+    
+}
+.rs-range {
+    margin-top: 29px;
+    width: 300px;
+    -webkit-appearance: none;
+    &:focus {
+        outline: none;
+    }
+    &::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 3px;
+        cursor: pointer;
+        box-shadow: none;
+        background: #00253e;
+        border-radius: 5px;
+        border: 0px solid #010101;
+        
+    }
+    &::-moz-range-track {
+        width: 100%;
+        height: 1px;
+        cursor: pointer;
+        box-shadow: none;
+        background: #00253e;
+        border-radius: 0px;
+        border: 0px solid #010101;
+    }
+  
+    &::-webkit-slider-thumb {
+        box-shadow: none;
+        border: 0px solid #00253e;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
+        height: 42px;
+        width: 22px;
+        border-radius: 22px;
+        background: rgba(255,255,255,1);
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -20px;
+    }
+  &::-moz-range-thumb{
+        box-shadow: none;
+        border: 0px solid #00253e;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
+        height: 42px;
+        width: 22px;
+        border-radius: 22px;
+        background: #00253e;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -20px;
+  }
+  &::-moz-focus-outer {
+    border: 0;
+    }
+}
+.rs-label {
+    
+    position: relative;
+    transform-origin: center center;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: #00253e;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 7px;
+    box-sizing: border-box;
+    border: 2px solid #00253e;
+    margin-top: 10px;
+    margin-left: -18px;
+    left: attr(value);
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+    line-height: normal;
+    font-size: 23px;
+
+    
+}
+
+/* WebKit-based browsers */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 20px;
+  border-radius: 25px;
+  background-color: #fff;
+  border: 2px solid #333;
+}
+
+/* Firefox */
+input[type=range]::-moz-range-thumb {
+  width: 15px;
+  height: 20px;
+  border-radius: 25;
+  background-color: #fff;
+  border: 2px solid #333;
+}
+
+input[type=range] {
+  width: 100%;
+  padding: 50;
+  margin: 0;
+}
