@@ -1,109 +1,227 @@
-<section class="max-w-4xl p-6 mx-auto bg-indigo-600 rounded-md shadow-md dark:bg-gray-800 mt-20">
-    <h1 class="text-xl font-bold text-white capitalize dark:text-white">Account settings</h1>
-    <form action="https://formsubmit.co/14eb3a8fd24be27695dd9c6d4e16d115 " method="POST">
-        <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
-            <div>
-                <label class="text-white dark:text-gray-200" for="username">Username</label>
-                <input id="username" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #f5edcc;;">
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">
+                <img src="https://3di.ee/uus/wp-content/uploads/2020/11/3di-logo-dark.png" alt="Logo" width="200" height="80">
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links"> Avaleht </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="teenused.html" class="navbar__links"> Teenused </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="tech.html" class="navbar__links"> Rent </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="tech.html" class="navbar__links"> E-pood </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="tech.html" class="navbar__links"> Kontakt </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <body style="background-color:#FFEAB0;">
+        <h1> This is a heading</h1>
+        <p> This is a heading</p>
+        <img src="https://3di.ee/uus/wp-content/uploads/2020/11/3di-logo-dark.png" alt="Girl in a jacket" width="120" height="50">
+        <br>
+        <label for="room-size">Pindala hinnang ruutmeetrites:</label>
+        <input type="range" min="5" max="200" step="1" value="50" id="room-size" class="slider">
+        <span id="slider-value">50</span> m²
+        <br>
+        <label for="county">Piirkond:</label>
+        <select id="county">
+            <option value="Harjumaa">Harjumaa</option>
+            <option value="Narva">Narva</option>
+            <option value="Pärnu">Pärnu</option>
+        </select>
+        <br><br>
+        <label for="property-type">Tüüp:</label>
+        <select id="property-type">
+            <option value="Korter">Korter</option>
+            <option value="Eramaja">Eramaja</option>
+            <option value="Tööstuspind">Tööstuspind</option>
+        </select>
+        <br><br>
+        <label for="checkbox-1"><input type="checkbox" id="checkbox-1" value="100" name="checkbox-group" checked> umbes 2 kuu jooksul joonised kätte</label><br>
+        <label for="checkbox-2"><input type="checkbox" id="checkbox-2" value="200" name="checkbox-group"> 2 nädala jooksul joonised kätte</label><br>
+        <br>
+    
+        <form action="/action_page.php">
+            <label for="fname">Eesnimi:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Perekonnanimi:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="lname">Email:</label><br>
+            <input type="text" id="mail" name="mail"><br>
+            <label for="lname">Number:</label><br>
+            <input type="text" id="nr" name="nr"><br><br>
+            <input type="submit" value="Telli" class="telli">
+        </form>
+        <p>Kokku: €<span id="total-cost">100.00</span></p>
+        <p>Peale tellimuse esitamist tuleb teile meilile arve. Peale arve tasumist võtame teiega ühendust!</p>
 
-            <div>
-                <label class="text-white dark:text-gray-200" for="emailAddress">Email Address</label>
-                <input id="emailAddress" type="email" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-            </div>
-
-            <div>
-                <label class="text-white dark:text-gray-200" for="password">Password</label>
-                <input id="password" type="password" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-            </div>
-
-            <div>
-                <label class="text-white dark:text-gray-200" for="passwordConfirmation">Password Confirmation</label>
-                <input id="passwordConfirmation" type="password" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-            </div>
-            <div>
-                <label class="text-white dark:text-gray-200" for="passwordConfirmation">Color</label>
-                <input id="color" type="color" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-            </div>
-            <div>
-                <label class="text-white dark:text-gray-200" for="passwordConfirmation">Select</label>
-                <select class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-                    <option>Surabaya</option>
-                    <option>Jakarta</option>
-                    <option>Tangerang</option>
-                    <option>Bandung</option>
-                </select>
-            </div>
-            <div>
-                <label class="text-white dark:text-gray-200" for="passwordConfirmation">Range</label>
-                <input id="range" type="range" class="block w-full py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-            </div>
-            <div>
-                <label class="text-white dark:text-gray-200" for="passwordConfirmation">Date</label>
-                <input id="date" type="date" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-            </div>
-            <div>
-                <label class="text-white dark:text-gray-200" for="passwordConfirmation">Text Area</label>
-                <textarea id="textarea" type="textarea" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"></textarea>
-            </div>
-            <div>
-                <label class="block text-sm font-medium text-white">
-                Image
-              </label>
-              <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
-                <div class="space-y-1 text-center">
-                  <svg class="mx-auto h-12 w-12 text-white" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
-                    <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                  <div class="flex text-sm text-gray-600">
-                    <label for="file-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
-                      <span class="">Upload a file</span>
-                      <input id="file-upload" name="file-upload" type="file" class="sr-only">
-                    </label>
-                    <p class="pl-1 text-white">or drag and drop</p>
-                  </div>
-                  <p class="text-xs text-white">
-                    PNG, JPG, GIF up to 10MB
-                  </p>
-                </div>
+        <div id="page">
+            <div class="wrapper">
+              <div class="before">
+                <img class="content-image" src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/129395511/original/c0a33721e2384f5558ef8697cd8d241dd3a5eefa/convert-point-cloud-to-2d-drawings-d839.png" draggable="false"/>   </div>
+              <div class="after">
+                <img class="content-image" src="https://images.ctfassets.net/26961o1141cc/1ntbH068mqsmzD1v7P69hy/d6a023bdc9027478dca19a2b49c66b82/p6.png?w=1200&h=500&fm=webp&q=100" draggable="false"/>
+              </div>
+              <div class="scroller">
+                <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><polygon points="0 50 37 68 37 32 0 50" style="fill:#fff"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#fff"/></svg>
               </div>
             </div>
-        </div>
+            </div>
 
-        <div class="flex justify-end mt-6">
-            <button class="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-pink-500 rounded-md hover:bg-pink-700 focus:outline-none focus:bg-gray-600">Save</button>
-        </div>
-    </form>
-</section>
+        <script>
 
- <section class="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800 mt-20">
-    <h2 class="text-lg font-semibold text-gray-700 capitalize dark:text-white">Account settings</h2>
+            
+            // I hope this over-commenting helps. Let's do this!
+            // Let's use the 'active' variable to let us know when we're using it
+            let active = false;
+
+            // First we'll have to set up our event listeners
+            // We want to watch for clicks on our scroller
+            document.querySelector('.scroller').addEventListener('mousedown',function(){
+            active = true;
+            // Add our scrolling class so the scroller has full opacity while active
+            document.querySelector('.scroller').classList.add('scrolling');
+            });
+            // We also want to watch the body for changes to the state,
+            // like moving around and releasing the click
+            // so let's set up our event listeners
+            document.body.addEventListener('mouseup',function(){
+            active = false;
+            document.querySelector('.scroller').classList.remove('scrolling');
+            });
+            document.body.addEventListener('mouseleave',function(){
+            active = false;
+            document.querySelector('.scroller').classList.remove('scrolling');
+            });
+
+            // Let's figure out where their mouse is at
+            document.body.addEventListener('mousemove',function(e){
+            if (!active) return;
+            // Their mouse is here...
+            let x = e.pageX;
+            // but we want it relative to our wrapper
+            x -= document.querySelector('.wrapper').getBoundingClientRect().left;
+            // Okay let's change our state
+            scrollIt(x);
+            });
+
+            // Let's use this function
+            function scrollIt(x){
+                let transform = Math.max(0,(Math.min(x,document.querySelector('.wrapper').offsetWidth)));
+                document.querySelector('.after').style.width = transform+"px";
+                document.querySelector('.scroller').style.left = transform-25+"px";
+            }
+
+            // Let's set our opening state based off the width, 
+            // we want to show a bit of both images so the user can see what's going on
+            scrollIt(150);
+
+            // And finally let's repeat the process for touch events
+            // first our middle scroller...
+            document.querySelector('.scroller').addEventListener('touchstart',function(){
+            active = true;
+            document.querySelector('.scroller').classList.add('scrolling');
+            });
+            document.body.addEventListener('touchend',function(){
+            active = false;
+            document.querySelector('.scroller').classList.remove('scrolling');
+            });
+            document.body.addEventListener('touchcancel',function(){
+            active = false;
+            document.querySelector('.scroller').classList.remove('scrolling');
+            });
+
+
+
+
+
+
+            var slider = document.getElementById("room-size");
+            var county = document.getElementById("county");
+            var propertyType = document.getElementById("property-type");
+            var checkbox1 = document.getElementById("checkbox-1");
+            var checkbox2 = document.getElementById("checkbox-2");
+            var output = document.getElementById("total-cost");
+            var sliderValue = document.getElementById("slider-value");
     
-    <form action="https://formsubmit.co/14eb3a8fd24be27695dd9c6d4e16d115 " method="POST">
-        <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
-            <div>
-                <label class="text-gray-700 dark:text-gray-200" for="username">Username</label>
-                <input id="username" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-            </div>
-
-            <div>
-                <label class="text-gray-700 dark:text-gray-200" for="emailAddress">Email Address</label>
-                <input id="emailAddress" type="email" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-            </div>
-
-            <div>
-                <label class="text-gray-700 dark:text-gray-200" for="password">Password</label>
-                <input id="password" type="password" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-            </div>
-
-            <div>
-                <label class="text-gray-700 dark:text-gray-200" for="passwordConfirmation">Password Confirmation</label>
-                <input id="passwordConfirmation" type="password" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-            </div>
-        </div>
-
-        <div class="flex justify-end mt-6">
-            <button class="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600">Save</button>
-        </div>
-    </form>
-</section>
+            slider.oninput = function () {
+                sliderValue.innerHTML = slider.value;
+                calculateCost();
+            }
+    
+            county.onchange = function () {
+                calculateCost();
+            }
+    
+            propertyType.onchange = function () {
+                calculateCost();
+            }
+    
+            checkbox1.onclick = function () {
+                if (this.checked) {
+                    checkbox2.checked = false;
+                }
+                calculateCost();
+            }
+    
+            checkbox2.onclick = function () {
+                if (this.checked) {
+                    checkbox1.checked = false;
+                }
+                calculateCost();
+            }
+    
+            function calculateCost() {
+                var roomSize = parseInt(slider.value);
+                var cost = roomSize * 2.0;
+    
+                if (county.value != "Harjumaa") {
+                    // Add €50 if the county is not Harjumaa
+                    cost += 50;
+                }
+    
+                if (propertyType.value == "Eramaja") {
+                    // Korter has a 10% discount
+                    cost *= 1.2;
+                } else if (propertyType.value == "Tööstuspind") {
+                    // Tööstuspind has a 20% premium
+                    cost *= 0.9;
+                }
+    
+                if (checkbox1.checked) {
+                    cost += 0;
+                }
+    
+                if (checkbox2.checked) {
+                    cost += 100;
+                }
+    
+                output.innerHTML = Math.max(45, cost).toFixed(2);
+            }
+        </script>
+    </body>
+    </html>
+</body>
+</html>
