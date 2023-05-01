@@ -120,6 +120,40 @@
 
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; /* optional: set a height to center vertically */
+  
+
+}
+
+
+form {
+  margin: auto;
+  border: 2px solid #ccc; /* add a 1px solid border */
+  padding: 20px; /* add some padding for spacing */
+  background-color: #f7e6ac; /* set a background color */
+  border-radius: 8px;
+}
+
 .services__cardLeft1 button{
     color: white;
     padding: 10px 20px;
@@ -311,7 +345,7 @@
     display: flex;
     justify-content: center;
     left:50%;
-    top:50%;
+    top:100%;
     transform:translate3d(-50%,-50%,0);
     overflow:hidden;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
